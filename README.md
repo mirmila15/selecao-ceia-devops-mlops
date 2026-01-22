@@ -14,6 +14,14 @@ Para garantir que o projeto funcione em qualquer ambiente, utilizamos Docker.
    - O serviço da api estará disponivél em http://localhost:8000/docs#/default/health_health_get 
 
 ## 3. Como Testar
+
+Após iniciar o container, você pode validar o funcionamento de três formas:
+*A.* Teste de Saúde (Health Check)
+Verifique se o serviço está online acessando no navegador ou via terminal:
+
+- URL: http://localhost:8000/health 
+- Comando: curl http://localhost:8000/health
+
 {
 "text": "Por que meu acesso foi negado?",
 "strategy": "rules"
